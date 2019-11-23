@@ -13,10 +13,9 @@ alert (admin + " теперь админ");
 var a = 20;
 var b = 30;
  
-a = a + b;
-b = b - a;
-b = -b;
-a = a - b;
+a = a + b; // 50
+b = a - b; // 50 - 30 =20
+a = a - b; // 50 = 20
 alert ('a= ' + a + ' b= ' + b);
 
 
