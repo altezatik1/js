@@ -8,10 +8,14 @@ var name = 'Василий';
 admin = name;
 alert (admin + " теперь админ");
 
+
+
 var a = 20;
 var b = 30;
-a = a + b; // 50
-b = a - b; // 20
+ 
+a = a + b;
+b = b - a;
+b = -b;
 a = a - b;
 alert ('a= ' + a + ' b= ' + b);
 
