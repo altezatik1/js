@@ -1,24 +1,45 @@
-let tempCelsiul = 32;
-alert ('Температура по цельсию 32 градуса');
-let tempFar = (9 / 5) * tempCelsiul + 32;
-alert ('По фаренгейту  ' + tempFar);
-
-var admin = '';
-var name = 'Василий';
-admin = name;
-alert (admin + " теперь админ");
+//1 
 
 
+function simpleNumber (num) {
+  if( num < 2 ) return false;
+  let count = 2;
+  while(count < num) {
+    if(num % count === 0) {
+      return false;
+    }
+    count++;
+  }
+  return true;
+}
 
-var a = 20;
-var b = 30;
- 
-a = a + b; // 50
-b = a - b; // 50 - 30 =20
-a = a - b; // 50 = 20
-alert ('a= ' + a + ' b= ' + b);
+function get100(max) {
+  let i = 0;
+  let list = [];
+
+  while (i < max) {
+    if(simpleNumber(i)) list.push(i);
+    i++;
+  }
+  console.log(list);
+}
+
+get100(100);
 
 
-var s = 1000 + "108";
 
-alert ('1000 +"108" =' + s );
+
+
+//4
+
+for (var i = 0; i < 9; i++, console.log(i)) {}
+
+
+//5
+
+var cc = "";
+for(var i = 1; i < 20; i++) {
+ cc = cc +"#";
+console.log(cc)
+}
+
